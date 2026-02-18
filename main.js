@@ -7,7 +7,6 @@ const dropText = document.getElementById('dropText')
 const btnUpload = document.getElementById('btnUpload')
 const muroImagenes = document.getElementById('muro-imagenes')
 
-// Activar input al hacer click en la zona punteada
 const seleccionarArchivo = () => {
     fileInput.click()
 }
@@ -59,7 +58,6 @@ const subirImagen = () => {
     .then(data => {
         alert("¡Subida exitosa!")
         
-        // Crear tarjeta para la galería dinámica
         const nuevaTarjeta = `
             <div class="foto-card">
                 <img src="${data.secure_url}" alt="Imagen Cloudinary">
