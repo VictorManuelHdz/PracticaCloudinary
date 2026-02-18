@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Cloudinary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Práctica Cloudinary</h1>
+    </header>
+
+    <main>
+        <p class="subtitle">Configura tu Cloud Name y Preset abajo para probar la subida real.</p>
+
+        <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="previsualizarImagen()">
+
+        <div id="dropZone" class="drop-zone" onclick="seleccionarArchivo()">
+            <p id="dropText">Click para seleccionar imagen</p>
+            <img id="preview" src="" style="display:none; max-width: 300px; border-radius: 8px;" alt="Vista previa">
+        </div>
+
+        <button id="btnUpload" class="btn-primary" onclick="subirImagen()" disabled>
+            SUBIR AHORA
+        </button>
+
+        <section id="galeria" class="galeria-container">
+            <h2>Mis Imágenes Subidas</h2>
+            <div id="muro-imagenes" class="muro-grid">
+                </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
