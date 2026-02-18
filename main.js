@@ -33,8 +33,8 @@ const previsualizarImagen = () => {
 // Función principal de subida
 const subirImagen = () => {
     const file = fileInput.files[0]
-    const cloudName = cloudNameInput.value.trim()
-    const preset = uploadPresetInput.value.trim()
+    const cloudName = cloudNameInput
+    const preset = uploadPresetInput
 
     if (!file || !cloudName || !preset) {
         alert("Configuración incompleta")
